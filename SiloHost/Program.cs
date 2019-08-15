@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using GraInInterfaces;
 using Grains;
+using Microsoft.Extensions.DependencyInjection;
 using Orleans.Configuration;
 using Orleans.Hosting;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using Orleans;
+using SiloHost.Filters;
 
 namespace SiloHost
 {
@@ -33,7 +38,6 @@ namespace SiloHost
                 return -1;
             }
         }
-        
         private static async Task<ISiloHost> StartSilo()
         {
             var builder = new SiloHostBuilder()
@@ -49,6 +53,19 @@ namespace SiloHost
                     options.AdvertisedIPAddress = IPAddress.Loopback;
                 })
                 .UseDashboard()
+                .ConfigureServices(services =>
+                {
+                    services.AddSingleton(s => CreateGrainMethodList());
+                    services.AddSingleton(s => new JsonSerializerSettings
+                    {
+                        NullValueHandling = NullValueHandling.Ignore,
+                        Formatting = Formatting.None,
+                        TypeNameHandling = TypeNameHandling.None,
+                        ReferenceLoopHandling = ReferenceLoopHandling.Serialize,
+                        PreserveReferencesHandling = PreserveReferencesHandling.Objects
+                    });
+                })
+                .AddIncomingGrainCallFilter<LoggingFilter>()
                 .AddAdoNetGrainStorageAsDefault(options =>
                 {
                     options.Invariant = "MySql.Data.MySqlClient";
@@ -61,7 +78,13 @@ namespace SiloHost
             var host = builder.Build();
             await host.StartAsync();
             return host;
-
         }
+        private static GrainInfo CreateGrainMethodList()
+        {
+            var grainInterfaces = typeof(IHello).Assembly.GetTypes().Where(type => type.IsInterface)
+                .SelectMany(type => type.GetMethods().Select(methodInfo => methodInfo.Name)).Distinct();
+            return new GrainInfo{Methods = grainInterfaces.ToList()};
+        }
+        
     }
 }
