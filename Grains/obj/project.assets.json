@@ -371,6 +371,20 @@
         "compile": {
           "ref/netstandard1.3/_._": {}
         }
+      },
+      "GraInInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Microsoft.Orleans.CodeGenerator.MSBuild": "2.4.1",
+          "Microsoft.Orleans.Core.Abstractions": "2.4.1"
+        },
+        "compile": {
+          "bin/placeholder/GraInInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GraInInterfaces.dll": {}
+        }
       }
     }
   },
@@ -1675,10 +1689,16 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "GraInInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../GraInInterfaces/GraInInterfaces.csproj",
+      "msbuildProject": "../GraInInterfaces/GraInInterfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "GraInInterfaces >= 1.0.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.Orleans.CodeGenerator.MSBuild >= 2.4.1",
       "Microsoft.Orleans.Core.Abstractions >= 2.4.1"
@@ -1711,7 +1731,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj": {
+              "projectPath": "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1730,8 +1754,6 @@
             "autoReferenced": true
           },
           "Microsoft.Orleans.CodeGenerator.MSBuild": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.4.1, )"
           },

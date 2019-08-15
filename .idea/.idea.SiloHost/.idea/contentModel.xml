@@ -18,8 +18,8 @@
       </e>
       <e p="GraInInterfaces" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
         <e p="GraInInterfaces.csproj" t="IncludeRecursive" />
+        <e p="IHello.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -31,8 +31,8 @@
       </e>
       <e p="Grains" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
         <e p="Grains.csproj" t="IncludeRecursive" />
+        <e p="HelloGrain.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">

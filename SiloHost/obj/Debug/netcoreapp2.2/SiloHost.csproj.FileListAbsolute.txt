@@ -9,3 +9,8 @@
 /Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/obj/Debug/netcoreapp2.2/SiloHost.AssemblyInfo.cs
 /Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/obj/Debug/netcoreapp2.2/SiloHost.dll
 /Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/obj/Debug/netcoreapp2.2/SiloHost.pdb
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/bin/Debug/netcoreapp2.2/GraInInterfaces.dll
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/bin/Debug/netcoreapp2.2/GraInInterfaces.pdb
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/obj/Debug/netcoreapp2.2/SiloHost.csproj.CopyComplete
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/bin/Debug/netcoreapp2.2/Grains.dll
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/bin/Debug/netcoreapp2.2/Grains.pdb

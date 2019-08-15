@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using GraInInterfaces;
 using Orleans;
 using Orleans.Configuration;
 
@@ -17,7 +18,10 @@ namespace Client
             {
                 using (var client = await StartClient())
                 {
-                    Console.WriteLine($"Client {client.IsInitialized}");
+                    var grain = client.GetGrain<IHello>(0);
+                    var response = await grain.SayHello("Good Morning");
+                    Console.WriteLine(response);
+                    Console.WriteLine();
                 }
 
                 return 0;

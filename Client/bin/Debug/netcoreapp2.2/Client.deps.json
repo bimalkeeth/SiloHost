@@ -1,13 +1,14 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "a1099b4455ae8fd0d57a62f14128879a4b6690d7"
+    "signature": "65f1767930bb5e13650dd095e6c6a5ed17c06a5c"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "Client/1.0.0": {
         "dependencies": {
+          "GraInInterfaces": "1.0.0",
           "Microsoft.Orleans.Client": "2.4.1"
         },
         "runtime": {
@@ -208,6 +209,7 @@
           "Microsoft.Orleans.OrleansProviders": "2.4.1"
         }
       },
+      "Microsoft.Orleans.CodeGenerator.MSBuild/2.4.1": {},
       "Microsoft.Orleans.Core/2.4.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
@@ -1146,6 +1148,15 @@
             "fileVersion": "4.6.24705.1"
           }
         }
+      },
+      "GraInInterfaces/1.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.CodeGenerator.MSBuild": "2.4.1",
+          "Microsoft.Orleans.Core.Abstractions": "2.4.1"
+        },
+        "runtime": {
+          "GraInInterfaces.dll": {}
+        }
       }
     }
   },
@@ -1266,6 +1277,13 @@
       "sha512": "sha512-dziiicVjTEdyUjeeuIkMJdBean/n41xy7eP+F+7vCDBJe9ArgQt/OIFdqjg93AKR/3rYEloI7gWY7tfFVk8t+w==",
       "path": "microsoft.orleans.client/2.4.1",
       "hashPath": "microsoft.orleans.client.2.4.1.nupkg.sha512"
+    },
+    "Microsoft.Orleans.CodeGenerator.MSBuild/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vXColg5nQUtO7eLXX4IXnjGvtYE2YgMhWYws7FCEbZlJ99O3MjYb6+VqfNiIiKeVjIHqaQTeV+eznKZ0DtRWxg==",
+      "path": "microsoft.orleans.codegenerator.msbuild/2.4.1",
+      "hashPath": "microsoft.orleans.codegenerator.msbuild.2.4.1.nupkg.sha512"
     },
     "Microsoft.Orleans.Core/2.4.1": {
       "type": "package",
@@ -1875,6 +1893,11 @@
       "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "GraInInterfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

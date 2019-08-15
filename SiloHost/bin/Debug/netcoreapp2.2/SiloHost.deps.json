@@ -1,13 +1,15 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "62ddb0f7272ed897bad16566bc4434ee6871401b"
+    "signature": "511f295ae7c0a3e86b2a3e096ad535510c2ce6f4"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "SiloHost/1.0.0": {
         "dependencies": {
+          "GraInInterfaces": "1.0.0",
+          "Grains": "1.0.0",
           "Microsoft.Orleans.Server": "2.4.1"
         },
         "runtime": {
@@ -203,6 +205,7 @@
           }
         }
       },
+      "Microsoft.Orleans.CodeGenerator.MSBuild/2.4.1": {},
       "Microsoft.Orleans.Core/2.4.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
@@ -1156,6 +1159,25 @@
             "fileVersion": "4.6.24705.1"
           }
         }
+      },
+      "GraInInterfaces/1.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.CodeGenerator.MSBuild": "2.4.1",
+          "Microsoft.Orleans.Core.Abstractions": "2.4.1"
+        },
+        "runtime": {
+          "GraInInterfaces.dll": {}
+        }
+      },
+      "Grains/1.0.0": {
+        "dependencies": {
+          "GraInInterfaces": "1.0.0",
+          "Microsoft.Orleans.CodeGenerator.MSBuild": "2.4.1",
+          "Microsoft.Orleans.Core.Abstractions": "2.4.1"
+        },
+        "runtime": {
+          "Grains.dll": {}
+        }
       }
     }
   },
@@ -1269,6 +1291,13 @@
       "sha512": "sha512-scJ1GZNIxMmjpENh0UZ8XCQ6vzr/LzeF9WvEA51Ix2OQGAs9WPgPu8ABVUdvpKPLuor/t05gm6menJK3PwqOXg==",
       "path": "microsoft.extensions.primitives/2.1.1",
       "hashPath": "microsoft.extensions.primitives.2.1.1.nupkg.sha512"
+    },
+    "Microsoft.Orleans.CodeGenerator.MSBuild/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vXColg5nQUtO7eLXX4IXnjGvtYE2YgMhWYws7FCEbZlJ99O3MjYb6+VqfNiIiKeVjIHqaQTeV+eznKZ0DtRWxg==",
+      "path": "microsoft.orleans.codegenerator.msbuild/2.4.1",
+      "hashPath": "microsoft.orleans.codegenerator.msbuild.2.4.1.nupkg.sha512"
     },
     "Microsoft.Orleans.Core/2.4.1": {
       "type": "package",
@@ -1892,6 +1921,16 @@
       "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "GraInInterfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Grains/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
