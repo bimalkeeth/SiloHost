@@ -2474,6 +2474,7 @@
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "GraInInterfaces": "1.0.0",
+          "Microsoft.Extensions.Logging.Console": "2.2.0",
           "Microsoft.Orleans.CodeGenerator.MSBuild": "2.4.1",
           "Microsoft.Orleans.Core.Abstractions": "2.4.1"
         },

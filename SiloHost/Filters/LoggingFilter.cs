@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Orleans;
+using SiloHost.Context;
 
 namespace SiloHost.Filters
 {
@@ -11,12 +12,15 @@ namespace SiloHost.Filters
         private readonly GrainInfo _grainInfo;
         private readonly ILogger<LoggingFilter> _logger;
         private readonly JsonSerializerSettings _serializerSettings;
+        private readonly IOrleansRequestContext _context;
 
-        public LoggingFilter(GrainInfo grainInfo,ILogger<LoggingFilter> logger,JsonSerializerSettings serializerSettings)
+
+        public LoggingFilter(GrainInfo grainInfo,ILogger<LoggingFilter> logger,JsonSerializerSettings serializerSettings,IOrleansRequestContext context)
         {
             _grainInfo = grainInfo;
             _logger = logger;
             _serializerSettings = serializerSettings;
+            _context = context;
         }
         public async Task Invoke(IIncomingGrainCallContext context)
         {
@@ -25,14 +29,14 @@ namespace SiloHost.Filters
                 if (ShowLog(context.ImplementationMethod.Name))
                 {
                     var arguments = JsonConvert.SerializeObject(context.Arguments, _serializerSettings);
-                    _logger.LogInformation($"LOGGINGFILTER{context.Grain.GetType()}-{context.ImplementationMethod.Name}:arguments{arguments} request");
+                    _logger.LogInformation($"LOGGINGFILTER TraceId {_context.TraceId}:{context.Grain.GetType()}-{context.ImplementationMethod.Name}:arguments{arguments} request");
                 }
             
                 await context.Invoke();
                 if (ShowLog(context.ImplementationMethod.Name))
                 {
                     var result = JsonConvert.SerializeObject(context.Result, _serializerSettings);
-                    _logger.LogInformation($"LOGGINGFILTER{context.Grain.GetType()}-{context.ImplementationMethod.Name}:arguments{result} request");
+                    _logger.LogInformation($"LOGGINGFILTERTraceId {_context.TraceId}:{context.Grain.GetType()}-{context.ImplementationMethod.Name}:arguments{result} request");
                     _logger.LogInformation($"");
                 }
             }
@@ -40,7 +44,7 @@ namespace SiloHost.Filters
             {
                 var arguments = JsonConvert.SerializeObject(context.Arguments, _serializerSettings);
                 var result=JsonConvert.SerializeObject(context.Result, _serializerSettings);
-                _logger.LogError($"LOGGINGFILTER{context.Grain.GetType()}-{context.ImplementationMethod.Name}: threw exception: {nameof(ex)} request",ex);
+                _logger.LogError($"LOGGINGFILTERTraceId {_context.TraceId}:{context.Grain.GetType()}-{context.ImplementationMethod.Name}: threw exception: {nameof(ex)} request",ex);
                 throw;
             }
             

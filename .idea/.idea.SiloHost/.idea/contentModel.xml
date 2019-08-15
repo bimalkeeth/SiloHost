@@ -45,6 +45,10 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="SiloHost" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Context" t="Include">
+          <e p="IOrleansRequestContext.cs" t="Include" />
+          <e p="OrleansRequestContext.cs" t="Include" />
+        </e>
         <e p="Filters" t="Include">
           <e p="LoggingFilter.cs" t="Include" />
         </e>

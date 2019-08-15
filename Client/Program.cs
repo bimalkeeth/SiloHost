@@ -20,6 +20,7 @@ namespace Client
             {
                 using (var client =  StartClient())
                 {
+                    RequestContext.Set("traceId",Guid.NewGuid());
                     var grain = client.GetGrain<IHello>(0);
                     var response = await grain.SayHello("Good Morning");
                     Console.WriteLine(response);
