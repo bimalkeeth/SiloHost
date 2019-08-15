@@ -52,6 +52,24 @@
             </e>
           </e>
         </e>
+        <e p="OrleansAdoNetContent" t="Include">
+          <e p="MySQL" t="Include">
+            <e p="MySQL-Main.sql" t="Include" />
+            <e p="MySQL-Persistence.sql" t="Include" />
+          </e>
+          <e p="Oracle" t="Include">
+            <e p="Oracle-Main.sql" t="Include" />
+            <e p="Oracle-Persistence.sql" t="Include" />
+          </e>
+          <e p="PostgreSQL" t="Include">
+            <e p="PostgreSQL-Main.sql" t="Include" />
+            <e p="PostgreSQL-Persistence.sql" t="Include" />
+          </e>
+          <e p="SQLServer" t="Include">
+            <e p="SQLServer-Main.sql" t="Include" />
+            <e p="SQLServer-Persistence.sql" t="Include" />
+          </e>
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="SiloHost.csproj" t="IncludeRecursive" />
       </e>

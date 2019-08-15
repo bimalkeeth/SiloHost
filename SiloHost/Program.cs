@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
+using Grains;
 using Orleans.Configuration;
 using Orleans.Hosting;
+using Microsoft.Extensions.Logging;
+using Orleans;
 
 namespace SiloHost
 {
@@ -44,7 +47,15 @@ namespace SiloHost
                     options.SiloPort = 11111;
                     options.GatewayPort = 30000;
                     options.AdvertisedIPAddress = IPAddress.Loopback;
-                });
+                }).AddAdoNetGrainStorageAsDefault(options =>
+                {
+                    options.Invariant = "MySql.Data.MySqlClient";
+                    options.ConnectionString = "Server=localhost;Uid=root;Pwd=root;Persist Security Info=true;Database=OrleansHelloWorld;SslMode=none";
+                    options.UseJsonFormat = true;
+                })
+                .ConfigureApplicationParts(parts=>parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
+                .ConfigureLogging(logging=>logging.AddConsole())
+                ;
             var host = builder.Build();
             await host.StartAsync();
             return host;

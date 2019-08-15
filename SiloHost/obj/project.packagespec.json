@@ -36,15 +36,27 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
+        "Microsoft.Extensions.Logging.Console": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
           "version": "[2.2.0, )",
           "autoReferenced": true
         },
+        "Microsoft.Orleans.Persistence.AdoNet": {
+          "target": "Package",
+          "version": "[2.4.1, )"
+        },
         "Microsoft.Orleans.Server": {
           "target": "Package",
           "version": "[2.4.1, )"
+        },
+        "MySql.Data": {
+          "target": "Package",
+          "version": "[8.0.17, )"
         }
       },
       "imports": [
