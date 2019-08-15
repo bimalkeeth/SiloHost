@@ -11,6 +11,7 @@
       <PackageReference Include="Microsoft.Orleans.Persistence.AdoNet" Version="2.4.1" />
       <PackageReference Include="Microsoft.Orleans.Server" Version="2.4.1" />
       <PackageReference Include="MySql.Data" Version="8.0.17" />
+      <PackageReference Include="OrleansDashboard" Version="2.4.1" />
     </ItemGroup>
 
     <ItemGroup>

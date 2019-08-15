@@ -47,7 +47,9 @@ namespace SiloHost
                     options.SiloPort = 11111;
                     options.GatewayPort = 30000;
                     options.AdvertisedIPAddress = IPAddress.Loopback;
-                }).AddAdoNetGrainStorageAsDefault(options =>
+                })
+                .UseDashboard()
+                .AddAdoNetGrainStorageAsDefault(options =>
                 {
                     options.Invariant = "MySql.Data.MySqlClient";
                     options.ConnectionString = "Server=localhost;Uid=root;Pwd=root;Persist Security Info=true;Database=OrleansHelloWorld;SslMode=none";

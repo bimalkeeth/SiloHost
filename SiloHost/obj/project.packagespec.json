@@ -57,6 +57,10 @@
         "MySql.Data": {
           "target": "Package",
           "version": "[8.0.17, )"
+        },
+        "OrleansDashboard": {
+          "target": "Package",
+          "version": "[2.4.1, )"
         }
       },
       "imports": [
