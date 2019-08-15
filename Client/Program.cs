@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using GraInInterfaces;
 using Orleans;
 using Orleans.Configuration;
+using Orleans.Runtime;
+using Polly;
 
 namespace Client
 {
@@ -16,7 +18,7 @@ namespace Client
         {
             try
             {
-                using (var client = await StartClient())
+                using (var client =  StartClient())
                 {
                     var grain = client.GetGrain<IHello>(0);
                     var response = await grain.SayHello("Good Morning");
@@ -32,20 +34,24 @@ namespace Client
                 return -1;
             }
         }
-
-        static async Task<IClusterClient> StartClient()
+        //static async Task<IClusterClient> StartClient()
+        static IClusterClient StartClient()
         {
-            var client = new ClientBuilder().Configure<ClusterOptions>(options =>
+            return Policy<IClusterClient>.Handle<SiloUnavailableException>()
+                .Or<OrleansMessageRejectionException>()
+                .WaitAndRetry(new []{TimeSpan.FromSeconds(2), TimeSpan.FromSeconds(4)}).Execute(() =>
                 {
-                    options.ClusterId = "dev";
-                    options.ServiceId = "HelloApp";
+                    var client = new ClientBuilder().Configure<ClusterOptions>(options =>
+                        {
+                            options.ClusterId = "dev";
+                            options.ServiceId = "HelloApp";
 
-                }).UseLocalhostClustering()
-                .Build();
-            await client.Connect();
-            Console.WriteLine("Client Connected");
-            return client;
-
+                        }).UseLocalhostClustering()
+                        .Build();
+                    client.Connect().GetAwaiter().GetResult();
+                    Console.WriteLine("Client Connected");
+                    return client;
+                });
         }
     }
 }

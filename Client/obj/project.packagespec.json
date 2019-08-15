@@ -42,6 +42,10 @@
         "Microsoft.Orleans.Client": {
           "target": "Package",
           "version": "[2.4.1, )"
+        },
+        "Polly": {
+          "target": "Package",
+          "version": "[7.1.0, )"
         }
       },
       "imports": [

@@ -567,6 +567,15 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "Polly/7.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -2792,6 +2801,21 @@
         "newtonsoft.json.10.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "Polly/7.1.0": {
+      "sha512": "mpQsvlEn4ipgICh5CGyVLPV93RFVzOrBG7wPZfzY8gExh7XgWQn0GCDY9nudbUEJ12UiGPP9i4+CohghBvzhmg==",
+      "type": "package",
+      "path": "polly/7.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.xml",
+        "polly.7.1.0.nupkg.sha512",
+        "polly.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -6475,7 +6499,8 @@
     ".NETCoreApp,Version=v2.2": [
       "GraInInterfaces >= 1.0.0",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Microsoft.Orleans.Client >= 2.4.1"
+      "Microsoft.Orleans.Client >= 2.4.1",
+      "Polly >= 7.1.0"
     ]
   },
   "packageFolders": {
@@ -6530,6 +6555,10 @@
           "Microsoft.Orleans.Client": {
             "target": "Package",
             "version": "[2.4.1, )"
+          },
+          "Polly": {
+            "target": "Package",
+            "version": "[7.1.0, )"
           }
         },
         "imports": [
