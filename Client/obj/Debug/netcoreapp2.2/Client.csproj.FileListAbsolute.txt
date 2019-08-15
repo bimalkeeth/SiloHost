@@ -1,0 +1,11 @@
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/bin/Debug/netcoreapp2.2/Client.deps.json
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/bin/Debug/netcoreapp2.2/Client.runtimeconfig.json
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/bin/Debug/netcoreapp2.2/Client.runtimeconfig.dev.json
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/bin/Debug/netcoreapp2.2/Client.dll
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/bin/Debug/netcoreapp2.2/Client.pdb
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/obj/Debug/netcoreapp2.2/Client.csprojAssemblyReference.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/obj/Debug/netcoreapp2.2/Client.csproj.CoreCompileInputs.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/obj/Debug/netcoreapp2.2/Client.AssemblyInfoInputs.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/obj/Debug/netcoreapp2.2/Client.AssemblyInfo.cs
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/obj/Debug/netcoreapp2.2/Client.dll
+/Users/bimalkeeth/RiderProjects/SiloHost/Client/obj/Debug/netcoreapp2.2/Client.pdb

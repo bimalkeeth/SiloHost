@@ -1,0 +1,11 @@
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/bin/Debug/netcoreapp2.2/GraInInterfaces.deps.json
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/bin/Debug/netcoreapp2.2/GraInInterfaces.dll
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/bin/Debug/netcoreapp2.2/GraInInterfaces.pdb
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/Debug/netcoreapp2.2/GraInInterfaces.csprojAssemblyReference.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/Debug/netcoreapp2.2/GraInInterfaces.csproj.OrleansCodeGenInputs.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/Debug/netcoreapp2.2/GraInInterfaces.orleans.g.cs
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/Debug/netcoreapp2.2/GraInInterfaces.csproj.CoreCompileInputs.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/Debug/netcoreapp2.2/GraInInterfaces.AssemblyInfoInputs.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/Debug/netcoreapp2.2/GraInInterfaces.AssemblyInfo.cs
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/Debug/netcoreapp2.2/GraInInterfaces.dll
+/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/Debug/netcoreapp2.2/GraInInterfaces.pdb

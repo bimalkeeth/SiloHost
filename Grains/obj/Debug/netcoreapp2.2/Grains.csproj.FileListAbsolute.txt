@@ -1,0 +1,11 @@
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/bin/Debug/netcoreapp2.2/Grains.deps.json
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/bin/Debug/netcoreapp2.2/Grains.dll
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/bin/Debug/netcoreapp2.2/Grains.pdb
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/obj/Debug/netcoreapp2.2/Grains.csprojAssemblyReference.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/obj/Debug/netcoreapp2.2/Grains.csproj.OrleansCodeGenInputs.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/obj/Debug/netcoreapp2.2/Grains.orleans.g.cs
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/obj/Debug/netcoreapp2.2/Grains.csproj.CoreCompileInputs.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/obj/Debug/netcoreapp2.2/Grains.AssemblyInfoInputs.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/obj/Debug/netcoreapp2.2/Grains.AssemblyInfo.cs
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/obj/Debug/netcoreapp2.2/Grains.dll
+/Users/bimalkeeth/RiderProjects/SiloHost/Grains/obj/Debug/netcoreapp2.2/Grains.pdb

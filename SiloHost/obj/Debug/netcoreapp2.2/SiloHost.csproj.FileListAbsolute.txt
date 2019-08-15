@@ -1,0 +1,11 @@
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/bin/Debug/netcoreapp2.2/SiloHost.deps.json
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/bin/Debug/netcoreapp2.2/SiloHost.runtimeconfig.json
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/bin/Debug/netcoreapp2.2/SiloHost.runtimeconfig.dev.json
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/bin/Debug/netcoreapp2.2/SiloHost.dll
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/bin/Debug/netcoreapp2.2/SiloHost.pdb
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/obj/Debug/netcoreapp2.2/SiloHost.csprojAssemblyReference.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/obj/Debug/netcoreapp2.2/SiloHost.csproj.CoreCompileInputs.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/obj/Debug/netcoreapp2.2/SiloHost.AssemblyInfoInputs.cache
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/obj/Debug/netcoreapp2.2/SiloHost.AssemblyInfo.cs
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/obj/Debug/netcoreapp2.2/SiloHost.dll
+/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/obj/Debug/netcoreapp2.2/SiloHost.pdb
