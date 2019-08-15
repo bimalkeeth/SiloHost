@@ -805,6 +805,21 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
+      "Microsoft.Orleans.EventSourcing/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0",
+          "Microsoft.Orleans.Core": "2.4.1",
+          "Microsoft.Orleans.Runtime.Abstractions": "2.4.1",
+          "System.Dynamic.Runtime": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Orleans.EventSourcing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Orleans.EventSourcing.dll": {}
+        }
+      },
       "Microsoft.Orleans.OrleansProviders/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -2476,7 +2491,8 @@
           "GraInInterfaces": "1.0.0",
           "Microsoft.Extensions.Logging.Console": "2.2.0",
           "Microsoft.Orleans.CodeGenerator.MSBuild": "2.4.1",
-          "Microsoft.Orleans.Core.Abstractions": "2.4.1"
+          "Microsoft.Orleans.Core.Abstractions": "2.4.1",
+          "Microsoft.Orleans.EventSourcing": "2.4.1"
         },
         "compile": {
           "bin/placeholder/Grains.dll": {}
@@ -3502,6 +3518,20 @@
         "lib/netstandard2.0/Orleans.Core.Abstractions.xml",
         "microsoft.orleans.core.abstractions.2.4.1.nupkg.sha512",
         "microsoft.orleans.core.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Orleans.EventSourcing/2.4.1": {
+      "sha512": "/PKQcgriDD2hSNUJzpdzCQ5dbWOjDiXR8ujl0w7cmtcXzkqlpmfIC/jt1oF7TgEhN4oECxL9mZ81bbXVYJw80g==",
+      "type": "package",
+      "path": "microsoft.orleans.eventsourcing/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Orleans.EventSourcing.dll",
+        "lib/netstandard2.0/Orleans.EventSourcing.pdb",
+        "lib/netstandard2.0/Orleans.EventSourcing.xml",
+        "microsoft.orleans.eventsourcing.2.4.1.nupkg.sha512",
+        "microsoft.orleans.eventsourcing.nuspec"
       ]
     },
     "Microsoft.Orleans.OrleansProviders/2.4.1": {

@@ -67,6 +67,7 @@ namespace SiloHost
                         PreserveReferencesHandling = PreserveReferencesHandling.Objects
                     });
                 })
+                .AddStateStorageBasedLogConsistencyProvider("StateStorage") //not normal
                 .AddIncomingGrainCallFilter<LoggingFilter>()
                 .AddAdoNetGrainStorageAsDefault(options =>
                 {

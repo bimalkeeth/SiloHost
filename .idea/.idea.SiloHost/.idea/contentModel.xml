@@ -19,6 +19,7 @@
       <e p="GraInInterfaces" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="GraInInterfaces.csproj" t="IncludeRecursive" />
+        <e p="IGreetingGrain.cs" t="Include" />
         <e p="IHello.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -32,6 +33,7 @@
       <e p="Grains" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Grains.csproj" t="IncludeRecursive" />
+        <e p="GreetingGrain.cs" t="Include" />
         <e p="HelloGrain.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

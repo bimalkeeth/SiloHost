@@ -5,7 +5,9 @@ AssemblyName:GraInInterfaces
 OutputType:Library
 TargetPath:/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/bin/Debug/netcoreapp2.2/GraInInterfaces.dll
 CodeGenOutputFile:/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/Debug/netcoreapp2.2/GraInInterfaces.orleans.g.cs
+Compile:/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/IGreetingGrain.cs
 Compile:/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/IHello.cs
+Compile:/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/Debug/netcoreapp2.2/GraInInterfaces.AssemblyInfo.cs
 Reference:/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.app/2.2.0/ref/netcoreapp2.2/Microsoft.CSharp.dll
 Reference:/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.app/2.2.0/ref/netcoreapp2.2/Microsoft.VisualBasic.dll
 Reference:/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.app/2.2.0/ref/netcoreapp2.2/Microsoft.Win32.Primitives.dll

@@ -50,6 +50,10 @@
         "Microsoft.Orleans.Core.Abstractions": {
           "target": "Package",
           "version": "[2.4.1, )"
+        },
+        "Microsoft.Orleans.EventSourcing": {
+          "target": "Package",
+          "version": "[2.4.1, )"
         }
       },
       "imports": [
