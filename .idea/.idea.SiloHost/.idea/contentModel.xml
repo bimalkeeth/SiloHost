@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_SiloHost.-1629946627.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\bimal.kaluarachchi\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\bimal.kaluarachchi\.Rider2019.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\bimal.kaluarachchi\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\bimal.kaluarachchi\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_SiloHost.-563765808.00" t="ExcludeRecursive" />
+    <e p="D:\SiloHost" t="IncludeFlat">
       <e p="Client" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Client.csproj" t="IncludeRecursive" />
+        <e p="Notify.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -21,6 +24,7 @@
         <e p="GraInInterfaces.csproj" t="IncludeRecursive" />
         <e p="IGreetingGrain.cs" t="Include" />
         <e p="IHello.cs" t="Include" />
+        <e p="INotify.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -28,6 +32,9 @@
               <e p="GraInInterfaces.orleans.g.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Observers" t="Include">
+          <e p="GrainObserverManager.cs" t="Include" />
         </e>
       </e>
       <e p="Grains" t="IncludeRecursive">

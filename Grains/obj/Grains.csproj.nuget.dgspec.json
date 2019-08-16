@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bimalkeeth/RiderProjects/SiloHost/Grains/Grains.csproj": {}
+    "D:\\SiloHost\\Grains\\Grains.csproj": {}
   },
   "projects": {
-    "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj": {
+    "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj",
+        "projectUniqueName": "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj",
         "projectName": "GraInInterfaces",
-        "projectPath": "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj",
-        "packagesPath": "/Users/bimalkeeth/.nuget/packages/",
-        "outputPath": "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/",
+        "projectPath": "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj",
+        "packagesPath": "C:\\Users\\bimal.kaluarachchi\\.nuget\\packages\\",
+        "outputPath": "D:\\SiloHost\\GraInInterfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/bimalkeeth/.config/NuGet/NuGet.Config"
+          "C:\\Users\\bimal.kaluarachchi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,32 +66,36 @@
         }
       }
     },
-    "/Users/bimalkeeth/RiderProjects/SiloHost/Grains/Grains.csproj": {
+    "D:\\SiloHost\\Grains\\Grains.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bimalkeeth/RiderProjects/SiloHost/Grains/Grains.csproj",
+        "projectUniqueName": "D:\\SiloHost\\Grains\\Grains.csproj",
         "projectName": "Grains",
-        "projectPath": "/Users/bimalkeeth/RiderProjects/SiloHost/Grains/Grains.csproj",
-        "packagesPath": "/Users/bimalkeeth/.nuget/packages/",
-        "outputPath": "/Users/bimalkeeth/RiderProjects/SiloHost/Grains/obj/",
+        "projectPath": "D:\\SiloHost\\Grains\\Grains.csproj",
+        "packagesPath": "C:\\Users\\bimal.kaluarachchi\\.nuget\\packages\\",
+        "outputPath": "D:\\SiloHost\\Grains\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/bimalkeeth/.config/NuGet/NuGet.Config"
+          "C:\\Users\\bimal.kaluarachchi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj": {
-                "projectPath": "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj"
+              "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj": {
+                "projectPath": "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj"
               }
             }
           }

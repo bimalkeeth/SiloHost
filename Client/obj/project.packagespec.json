@@ -1,25 +1,27 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/bimalkeeth/RiderProjects/SiloHost/Client/Client.csproj",
+    "projectUniqueName": "D:\\SiloHost\\Client\\Client.csproj",
     "projectName": "Client",
-    "projectPath": "/Users/bimalkeeth/RiderProjects/SiloHost/Client/Client.csproj",
-    "outputPath": "/Users/bimalkeeth/RiderProjects/SiloHost/Client/obj/",
+    "projectPath": "D:\\SiloHost\\Client\\Client.csproj",
+    "outputPath": "D:\\SiloHost\\Client\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Microsoft\\Xamarin\\NuGet",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"
     ],
     "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
       "https://api.nuget.org/v3/index.json": {}
     },
     "frameworks": {
       "netcoreapp2.2": {
         "projectReferences": {
-          "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj": {
-            "projectPath": "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj"
+          "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj": {
+            "projectPath": "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj"
           }
         }
       }

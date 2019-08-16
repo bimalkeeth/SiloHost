@@ -13,7 +13,7 @@ namespace Grains
     public class HelloGrain:Grain<GreetingArchive>,IHello
     {
         private readonly ILogger<HelloGrain> _logger;
-
+        private GrainObserverManager<INotify> _subsManager;
         public HelloGrain(ILogger<HelloGrain> logger)
         {
             _logger = logger;
@@ -28,6 +28,7 @@ namespace Grains
             State.Greetings.Add(greetings);
             await WriteStateAsync();
             DeactivateOnIdle();
+
             return $"You Said {greetings}, I say Hello";
         }
 
