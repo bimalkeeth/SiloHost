@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Net;
+using System.Threading;
 using System.Threading.Tasks;
 using EventStore.ClientAPI;
 using GraInInterfaces;
@@ -18,6 +19,11 @@ namespace SiloHost
 {
     static class Program
     {
+        private static readonly ManualResetEvent _siloStop=new ManualResetEvent(false);
+        private static bool siloStopping;
+        static readonly  object syncLock=new object();
+        private static ISiloHost host;
+        
         public static async Task<int> Main(string[] args)
         {
            return await RunSilo();
@@ -27,11 +33,12 @@ namespace SiloHost
         {
             try
             {
+                SetUpApplicationShutDown();
                 await StartSilo();
                 Console.WriteLine("Silo Starred");
                 Console.WriteLine("Please enter to terminate");
                 Console.ReadLine();
-
+                _siloStop.WaitOne();
                 return 0;
             }
             catch (Exception e)
@@ -79,7 +86,7 @@ namespace SiloHost
                 })
                 .ConfigureApplicationParts(parts=>parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
                 .ConfigureLogging(logging=>logging.AddConsole());
-            var host = builder.Build();
+            host = builder.Build();
             await host.StartAsync();
             return host;
         }
@@ -95,6 +102,27 @@ namespace SiloHost
             var conn = EventStoreConnection.Create(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 1113));
             conn.ConnectAsync().GetAwaiter().GetResult();
             return conn;
+        }
+
+        static void SetUpApplicationShutDown()
+        {
+            Console.CancelKeyPress += (s, a) =>
+            {
+                a.Cancel = true;
+                lock (syncLock)
+                {
+                    if (!siloStopping)
+                    {
+                        siloStopping = true;
+                        Task.Run(StopSilo).Ignore();
+                    }
+                }
+            };
+        }
+        static async Task StopSilo()
+        {
+            await host.StopAsync();
+            _siloStop.Set();
         }
         
     }
