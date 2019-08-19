@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using EventStore.ClientAPI;
 using GraInInterfaces;
 using Grains;
 using Microsoft.Extensions.DependencyInjection;
@@ -66,8 +67,9 @@ namespace SiloHost
                         ReferenceLoopHandling = ReferenceLoopHandling.Serialize,
                         PreserveReferencesHandling = PreserveReferencesHandling.Objects
                     });
+                    services.AddSingleton(x => CreateEventStoreConnection());
                 })
-                .AddStateStorageBasedLogConsistencyProvider("StateStorage") //not normal
+                .AddCustomStorageBasedLogConsistencyProvider("CustomStorage")
                 .AddIncomingGrainCallFilter<LoggingFilter>()
                 .AddAdoNetGrainStorageAsDefault(options =>
                 {
@@ -76,8 +78,7 @@ namespace SiloHost
                     options.UseJsonFormat = true;
                 })
                 .ConfigureApplicationParts(parts=>parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
-                .ConfigureLogging(logging=>logging.AddConsole())
-                ;
+                .ConfigureLogging(logging=>logging.AddConsole());
             var host = builder.Build();
             await host.StartAsync();
             return host;
@@ -87,6 +88,13 @@ namespace SiloHost
             var grainInterfaces = typeof(IHello).Assembly.GetTypes().Where(type => type.IsInterface)
                 .SelectMany(type => type.GetMethods().Select(methodInfo => methodInfo.Name)).Distinct();
             return new GrainInfo{Methods = grainInterfaces.ToList()};
+        }
+
+        private static IEventStoreConnection CreateEventStoreConnection()
+        {
+            var conn = EventStoreConnection.Create(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 1113));
+            conn.ConnectAsync().GetAwaiter().GetResult();
+            return conn;
         }
         
     }

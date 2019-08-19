@@ -1,32 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SiloHost\\Grains\\Grains.csproj": {}
+    "/Users/bimalkeeth/RiderProjects/SiloHost/Grains/Grains.csproj": {}
   },
   "projects": {
-    "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj": {
+    "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj",
+        "projectUniqueName": "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj",
         "projectName": "GraInInterfaces",
-        "projectPath": "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj",
-        "packagesPath": "C:\\Users\\bimal.kaluarachchi\\.nuget\\packages\\",
-        "outputPath": "D:\\SiloHost\\GraInInterfaces\\obj\\",
+        "projectPath": "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj",
+        "packagesPath": "/Users/bimalkeeth/.nuget/packages/",
+        "outputPath": "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bimal.kaluarachchi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/bimalkeeth/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,36 +62,32 @@
         }
       }
     },
-    "D:\\SiloHost\\Grains\\Grains.csproj": {
+    "/Users/bimalkeeth/RiderProjects/SiloHost/Grains/Grains.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SiloHost\\Grains\\Grains.csproj",
+        "projectUniqueName": "/Users/bimalkeeth/RiderProjects/SiloHost/Grains/Grains.csproj",
         "projectName": "Grains",
-        "projectPath": "D:\\SiloHost\\Grains\\Grains.csproj",
-        "packagesPath": "C:\\Users\\bimal.kaluarachchi\\.nuget\\packages\\",
-        "outputPath": "D:\\SiloHost\\Grains\\obj\\",
+        "projectPath": "/Users/bimalkeeth/RiderProjects/SiloHost/Grains/Grains.csproj",
+        "packagesPath": "/Users/bimalkeeth/.nuget/packages/",
+        "outputPath": "/Users/bimalkeeth/RiderProjects/SiloHost/Grains/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bimal.kaluarachchi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/bimalkeeth/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj": {
-                "projectPath": "D:\\SiloHost\\GraInInterfaces\\GraInInterfaces.csproj"
+              "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj": {
+                "projectPath": "/Users/bimalkeeth/RiderProjects/SiloHost/GraInInterfaces/GraInInterfaces.csproj"
               }
             }
           }
@@ -109,6 +101,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "EventStore.Client": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
               "version": "[2.2.0, )"

@@ -25,6 +25,13 @@ namespace Client
                     var response = await grain.SayHello("Good Morning");
                     Console.WriteLine(response);
                     Console.WriteLine();
+
+
+                    var greetGrain = client.GetGrain<IGreetingGrain>(0);
+                    await greetGrain.SendGreetings("Hi There");
+                    
+                    var greetGrain2 = client.GetGrain<IGreetingGrain>(0);
+                    await greetGrain.SendGreetings("Hi Morning");
                 }
 
                 return 0;
