@@ -23,6 +23,7 @@
         <e p="IGreetingGrain.cs" t="Include" />
         <e p="IHello.cs" t="Include" />
         <e p="INotify.cs" t="Include" />
+        <e p="IProcessing.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -50,9 +51,11 @@
             </e>
           </e>
         </e>
+        <e p="ProcessingGrain.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="SiloHost" t="IncludeRecursive">
+        <e p="19.pdf" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Context" t="Include">
           <e p="IOrleansRequestContext.cs" t="Include" />

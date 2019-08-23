@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using GraInInterfaces;
 using Microsoft.Extensions.Logging;
@@ -26,8 +27,16 @@ namespace Grains
         public async Task<string> SayHello(string greetings)
         {
             State.Greetings.Add(greetings);
+
+           var dd= GrainFactory.GetGrain<IProcessing>(Guid.NewGuid());
+           
+           var file = System.IO.File.ReadAllBytes("/Users/bimalkeeth/RiderProjects/SiloHost/SiloHost/19.pdf");
+
+           await dd.ProcessFile(file);
+            
             await WriteStateAsync();
             DeactivateOnIdle();
+            
 
             return $"You Said {greetings}, I say Hello";
         }
@@ -41,6 +50,7 @@ namespace Grains
 
     public class GreetingArchive
     {
+        
         public List<string> Greetings { get; set; }=new List<string>();
     }
 }
